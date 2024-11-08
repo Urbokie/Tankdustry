@@ -1,0 +1,72 @@
+{
+  "type": "UnitFactory",
+  "size": 5,
+  "consumes": {
+    "power": 5
+  },
+  "plans": [
+    {
+      "unit": "b1",
+      "requirements": [
+        {
+          "item": "silicon",
+          "amount": 120
+        },
+        {
+          "item": "titanium",
+          "amount": 200
+        },
+        {
+          "item": "copper",
+          "amount": 300
+        }
+      ],
+      "time": 480
+    },
+    {
+      "unit": "kv2",
+      "requirements": [
+        {
+          "item": "silicon",
+          "amount": 480
+        },
+        {
+          "item": "titanium",
+          "amount": 275
+        },
+        {
+          "item": "thorium",
+          "amount": 300
+        },
+        {
+          "item": "copper",
+          "amount": 150
+        }
+      ],
+      "time": 480
+    }
+  ],
+  "requirements": [
+    {
+      "item": "silicon",
+      "amount": 500
+    },
+    {
+      "item": "graphite",
+      "amount": 250
+    },
+    {
+      "item": "titanium",
+      "amount": 350
+    },
+    {
+      "item": "thorium",
+      "amount": 400
+    },
+    {
+      "item": "plastanium",
+      "amount": 125
+    }
+  ],
+  "category": "units"
+}
