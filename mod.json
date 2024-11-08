@@ -1,8 +1,9 @@
-name: "TankDustry"
-displayName: "mod that add tank"
-author: Loliman
-description: "bruh"
-version: "1.0"
-minGameVersion: "146"
-dependencies: [ ]
-hidden: false
+{
+"name": "TankDustry",
+"displayName": "Real tank in Mindustry???",
+"repo": "Urbokie/TankDustry",
+"author": "Urbokie",
+"description": "a small mod that add tank",
+"version": "1",
+"minGameVersion": "146"
+}
