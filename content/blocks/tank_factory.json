@@ -1,0 +1,90 @@
+{
+  "type": "UnitFactory",
+  "size": 5,
+  "consumes": {
+    "power": 5
+  },
+  "plans": [
+    {
+      "unit": "b1",
+      "requirements": [
+        {
+          "item": "plaque",
+          "amount": 170
+        },
+        {
+          "item": "titanium",
+          "amount": 200
+        },
+        {
+          "item": "lead",
+          "amount": 250
+        }
+      ],
+      "time": 480
+    },
+    {
+      "unit": "kv2",
+      "requirements": [
+        {
+          "item": "plaque",
+          "amount": 450
+        },
+        {
+          "item": "titanium",
+          "amount": 275
+        },
+        {
+          "item": "thorium",
+          "amount": 300
+        },
+        {
+          "item": "lead",
+          "amount": 150
+        }
+      ],
+      "time": 480
+    },
+    {
+      "unit": "rbt5",
+      "requirements": [
+        {
+          "item": "plaque",
+          "amount": 120
+        },
+        {
+          "item": "pyratite",
+          "amount": 80
+        },
+        {
+          "item": "lead",
+          "amount": 100
+        }
+      ],
+      "time": 480
+    }
+  ],
+  "requirements": [
+    {
+      "item": "plaque",
+      "amount": 400
+    },
+    {
+      "item": "graphite",
+      "amount": 250
+    },
+    {
+      "item": "titanium",
+      "amount": 200
+    },
+    {
+      "item": "beton",
+      "amount": 300
+    },
+    {
+      "item": "thorium",
+      "amount": 125
+    }
+  ],
+  "category": "units"
+}

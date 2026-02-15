@@ -1,0 +1,56 @@
+{
+"type": "missile",
+"physics": false,
+"template": "MissileUnitType",
+"flying": true,
+"speed": 5.5,
+"missileAccelTime": 30,
+"useUnitCap": false,
+"engineSize": 1.5,
+"engineOffset": 1.5,
+"lifetime": 100,
+"rotateSpeed": 0,
+"hitSize": 1,
+"trailLength": 5,
+"autoFindTarget": true,
+"homingDelay": 3,
+"circleTarget": false,
+"faceTarget": true,
+"health": 200,
+"trailColor": "fac136",
+"aimDst": 4,
+"drawCell": false,
+"outlines": true,
+"outlineRadius": 2,
+"outlineColor": "44413c",
+"range": 4,
+"hidden": true,
+"weapons": [
+  {
+    "reload": 1,
+    "shootOnDeath": true,
+    "mirror": true,
+    "shootCone": 360,
+    "shake": 1,
+    "shootSound": "rbtexplorocket",
+    "bullet": {
+      "type": "ExplosionBulletType",
+      "splashDamage": 3500,
+      "splashDamageRadius": 50,
+      "smokeEffect": {
+          "particles": 100,
+          "lightOpacity": 0,
+          "length": 50,
+          "lifetime": 100,
+          "cone": 360,
+          "sizeFrom": 3,
+          "sizeTo": 0,
+          "colorFrom": "ffb654",
+          "colorTo": "ffa123",
+          "interp": "fastSlow",
+          "sizeInterp": "pow3In"
+        } 
+    }
+  }
+]
+}

@@ -1,0 +1,38 @@
+{
+  "size": 2,
+  "type": "GenericCrafter",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawWeave"
+      }
+    ]
+  },
+  "hasPower": true,
+  "hasItems": true,
+  "itemCapacity": 10,
+  "craftTime": 115,
+  
+  "consumes": {
+    "power": 0.2,
+    "items": {
+      "items": [
+        "sand/3"
+      ]
+    },
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.15
+    }
+  },
+  "requirements": [
+    "copper/20",
+    "lead/100"
+  ],
+  "category": "crafting",
+  "outputItem": "beton/1"
+}

@@ -40,7 +40,7 @@
       "shootX": 0,
 
       "reload": 400,
-      "recoil": 0,
+      "recoil": 1,
       "parts": [
         {
           "type": "RegionPart",
@@ -56,10 +56,24 @@
           ]
         }
       ],
-      "shootSound": "artillery",
+      "shootSound": "groTir",
       "bullet": {
         "type": "ArtilleryBulletType",
         "sprite": "missile-large",
+        "smokeEffect": {
+          "particles": 25,
+          "lightOpacity": 0,
+          "length": -50,
+          "lifetime": 100,
+          "cone": 50,
+          "sizeFrom": 3,
+          "sizeTo": 0,
+          "colorFrom": 808080,
+          "colorTo": 303030,
+          "interp": "fastSlow",
+          "sizeInterp": "pow3In"
+        } 
+,
         "despawnHit": true,
         "lifetime": 150,
         "damage": 350,

@@ -1,45 +1,45 @@
 {
-"description": "good french tonk",
-"name":"b1-bis",
+"description": "small russian tank with big rocket",
+"name":"rbt-5",
 "type": "tank",
-"hitSize": 30,
-"crushDamage": 6,
+"hitSize": 20,
+"crushDamage": 0.5,
 "treadPullOffset": 6,
 "singleTarget": false,
 "omniMovement": false,
 "faceTarget": false,
-"health": 2050,
-"armor": 14,
-"speed": 0.59,
-"rotateSpeed": 1.4,
+"health": 500,
+"armor": 5,
+"speed": 1.5,
+"rotateSpeed": 1.9,
 "itemCapacity": 0,
 "outlineColor": "44413c",
 "treadRects": [
     {
-      "x": 25,
-      "y": -76,
-      "width": 16,
-      "height": 155
+      "x": 15.5,
+      "y": -78,
+      "width": 16.5,
+      "height": 140
     }
   ],
 
 
 "weapons": [
     {
-      "name": "b1_tour",
+      "name": "rbt5_tour",
       "mirror": false,
       "top": true,
       "x": 0,
-      "y": 8,
+      "y": 5,
       "layerOffset": 3,
       "rotate": true,
       "inaccuracy": 0,
-      "rotateSpeed": 3,
+      "rotateSpeed": 1.5,
       "cooldownTime": 30,
-      "shootY": 15,
-      "shootX": 1,
+      "shootY": 12,
+      "shootX": 0,
 
-      "reload": 200,
+      "reload": 150,
       "recoil": 0,
       "parts": [
         {
@@ -63,34 +63,32 @@
         "hitEffect": "hitBulletSmall",
         "despawnHit": true,
         "lifetime": 22.85714286,
-        "damage": 250,
+        "damage": 75,
         "pierceArmor": true,
         "speed": 9,
         "trailLength": 2,
         "trailWidth": 0.5,
-        "width": 4,
-        "height": 9,
+        "width": 3,
+        "height": 7,
         "trailColor": "edcc49",
         "backColor": "ff7048",
         "frontColor": "f9db62"
       }
-
     },
-    
     {
-      "name": "b1_mit",
+      "name": "rbt5_mit",
       "mirror": false,
       "top": true,
       "x": 0,
-      "y": 8,
-      "layerOffset": 3,
+      "y": 5,
+      "layerOffset": 1,
       "rotate": true,
       "inaccuracy": 4,
-      "rotateSpeed": 3,
+      "rotateSpeed": 1.5,
       "cooldownTime": 30,
-      "shootY": 8,
-      "shootX": -1,
-
+      "shootY": 6,
+      "shootX": -0.5,
+      
       "reload": 10,
       "recoil": 0,
       "bullet": {
@@ -98,58 +96,50 @@
         "sprite": "missile-large",
         "despawnHit": true,
         "lifetime": 15.85714286,
-        "damage": 15,
+        "damage": 5,
         "speed": 7,
-        "width": 2,
-        "height": 6,
+        "width": 1,
+        "height": 4,
         "backColor": "9b988e",
         "frontColor": "9b988e"
       }
-
     },
     {
-      "name": "b1_mortier-mortier",
-      "mirror": false,
+      "name": "rbt5_rock",
+      "mirror": true,
       "top": true,
       "x": 0,
-      "y": 0,
-      "layerOffset": 1,
+      "y": 5,
+      "layerOffset": 2,
       "rotate": true,
-      "inaccuracy": 1,
-      "rotateSpeed": 3,
+      "inaccuracy": 0,
+      "rotateSpeed": 1.5,
       "shootCone": 13,
-      "rotationLimit": 7,
+      "rotationLimit": 360,
       "cooldownTime": 30,
-      "shootY": 18,
-      "shootX": 3,
-      "parts": [
-        {
-          "type": "RegionPart",
-          "suffix": "-sertarien",
-          "rotate":false,
-          "under": false
-        }
-      ],
-
-      "reload": 400,
-      "recoil": 1,
-      "shootSound": "b1tirmortier",
+      "shootY": -5,
+      "shootX": -4.5,
+      "reload": 550,
+      "recoil": 5,
+      "shootSound": "rbttirrocket",
       "bullet": {
-        "type": "ArtilleryBulletType",
-        "sprite": "missile-large",
-        "despawnHit": true,
-        "lifetime": 100,
-        "damage": 75,
-        "splashDamage": 100,
-        "splashDamageRadius": 20,
-        "speed": 3,
-        "width": 5,
-        "height": 9,
-        "backColor": "ecb72a",
-        "frontColor": "9b988e"
+        "instantDisappear": true,
+        "smokeEffect": {
+          "particles": 25,
+          "lightOpacity": 0,
+          "length": -35,
+          "lifetime": 60,
+          "cone": 35,
+          "sizeFrom": 3,
+          "sizeTo": 0,
+          "colorFrom": "ffe675",
+          "colorTo": "ffc943",
+          "interp": "fastSlow",
+          "sizeInterp": "pow3In"
+        },
+        "damage": 0,
+        "spawnUnit": "rbt5_rocket"
       }
-    }
-    
-
+      }
   ]
 }

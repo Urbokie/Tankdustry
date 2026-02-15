@@ -1,0 +1,43 @@
+{
+  "size": 1,
+  "type": "GenericCrafter",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      }
+    ]
+  },
+  "hasPower": true,
+  "hasItems": true,
+  "itemCapacity": 10,
+  "craftTime": 75,
+  "craftEffect": {
+    "type": "sapExplosion",
+    "line": true,
+    "particles": 6,
+    "lifetime": 50,
+    "length": 25,
+    "cone": -360,
+    "lenFrom": 5,
+    "lenTo": 0,
+    "colorFrom": "ffffff",
+    "colorTo": "ffb600"
+  },
+  "updateEffect": "none",
+  "consumes": {
+    "power": 0.2,
+    "items": {
+      "items": [
+        "silicon/1"
+      ]
+    }
+  },
+  "requirements": [
+    "copper/20",
+    "lead/100"
+  ],
+  "category": "crafting",
+  "outputItem": "plaque/1"
+}

@@ -1,0 +1,49 @@
+{
+  "type": "itemTurret",
+  "health": 2100,
+  "coolantMultiplier": 1.1,
+  "consumes": {
+    "coolant": {
+      "amount": 1.25
+    }
+  },
+  "reload": 45,
+  "ammoUseEffect": "casing3",
+  "range": 300,
+  "inaccuracy": 6,
+  "recoil": 3,
+  "shoot": {
+    "type": "ShootAlternate",
+    "barrels": 2,
+    "spread": 7,
+    "shots": 1
+  },
+  "shootShake": 1,
+  "size": 3,
+  "shootCone": 24,
+  "shootSound": "tirdouble",
+  "ammoTypes": {
+    "silicon": {
+      "type": "BasicBulletType",
+      "speed": 7.5,
+      "damage": 200,
+      "splashDamage": 30,
+      "splashDamageRadius": 8,
+      "frontColor": "404040FF",
+      "backColor": "2A2A2AFF",
+      "height": 18,
+      "width": 7,
+      "hitEffect": "blastExplosion",
+      "shootEffect": "shootBig2",
+      "pierce": false
+    }
+  },
+  "requirements": [
+    "plaque/100",
+    "silicon/80",
+    "titanium/125",
+    "copper/200",
+    "beton/150"
+  ],
+  "category": "turret"
+}

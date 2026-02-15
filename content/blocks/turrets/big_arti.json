@@ -1,0 +1,57 @@
+{
+  "type": "ItemTurret",
+  "researchCostMultiplier": 0.1,
+  "size": 4,
+  "health": 4600,
+  "reload": 550,
+  "range": 900,
+  "maxAmmo": 60,
+  "inaccuracy": 3,
+  "targetAir": true,
+  "targetGround": true,
+  "shootCone": 0.5,
+  "spread": 1,
+  "recoil": 6,
+  "rotateSpeed": 0.5,
+  "shootSound": "tir_big_arti",
+  "ammoPerShot": 15,
+  "ammoTypes": {
+    "lead": {
+      "type": "ArtilleryBulletType",
+      "sprite": "missile-large",
+      "speed": 4,
+      "damage": 1000,
+      "splashDamage": 2000,
+      "splashDamageRadius": 50,
+      "height": 25,
+      "width": 8,
+      "hitEffect": "blastExplosion",
+      "shootEffect": "shootBig2",
+      "pierce": false
+    }
+  },
+  "requirements": [
+    {
+      "item": "plaque",
+      "amount": 650
+    },
+    {
+      "item": "beton",
+      "amount": 500
+    },
+    {
+      "item": "plastanium",
+      "amount": 380
+    },
+    {
+      "item": "copper",
+      "amount": 2000
+    }
+  ],
+  "category": "turret",
+  "research": {
+    "requirements": [
+      "copper/200"
+    ]
+  }
+}

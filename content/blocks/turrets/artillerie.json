@@ -1,0 +1,71 @@
+{
+  "type": "ItemTurret",
+  "researchCostMultiplier": 0.1,
+  "size": 2,
+  "health": 1200,
+  "reload": 105,
+  "range": 250,
+  "maxAmmo": 45,
+  "inaccuracy": 6,
+  "targetAir": true,
+  "targetGround": true,
+  "shootCone": 0.5,
+  "spread": 1,
+  "recoilAmount": 8,
+  "restitution": 0.06,
+  "rotateSpeed": 2,
+  "shootSound": "tirleger",
+  "xRand": 1,
+  "ammoPerShot": 6,
+  "ammoTypes": {
+    "lead": {
+      "type": "BasicBulletType",
+      "speed": 7,
+      "damage": 90,
+      "splashDamage": 30,
+      "splashDamageRadius": 8,
+      "frontColor": "404040FF",
+      "backColor": "2A2A2AFF",
+      "height": 14,
+      "width": 5,
+      "hitEffect": "blastExplosion",
+      "shootEffect": "shootBig2",
+      "pierce": false
+    },
+    "scrap": {
+      "type": "BasicBulletType",
+      "speed": 5,
+      "damage": 75,
+      "splashDamage": 50,
+      "splashDamageRadius": 16,
+      "frontColor": "ffb600",
+      "backColor": "2A2A2AFF",
+      "height": 16,
+      "width": 7,
+      "hitEffect": "blastExplosion",
+      "shootEffect": "shootBig2",
+      "pierce": false
+    }
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 35
+    },
+    {
+      "item": "lead",
+      "amount": 30
+    },
+    {
+      "item": "beton",
+      "amount": 30
+    }
+  ],
+  "category": "turret",
+  "research": {
+    "parent": "duo",
+    "requirements": [
+      "copper/200"
+    ]
+  }
+}
